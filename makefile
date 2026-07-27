@@ -1,5 +1,5 @@
 build:
-	gcc -Wall -std=c99 src/*.c -lSDL2-o renderer $(shell pkg-config --cflags --libs sdl2)
+	gcc -Wall -std=c99 src/*.c -o renderer $(shell pkg-config --cflags --libs sdl2)
 run: 
 	./renderer
 clean:
